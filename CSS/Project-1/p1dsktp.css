@@ -1,0 +1,113 @@
+/*For Desktop:*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;} 
+
+*{
+	box-sizing: border-box;
+}
+
+.nav-logo{
+	text-align: left;
+	margin-left: -30px;
+}
+
+.nav-heading h1{
+	text-align:right;
+	color: #8F697B;
+	background-color: floralwhite ;
+	padding: 5px;
+	margin-top: 5px;
+	margin-left: -50px;
+	font-size: 1.2rem;
+}
+
+.nav-menu{
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.nav-menu a{
+	margin: 3px;
+	font-size: 10px;
+	padding: 10px 5px;
+	margin-top: 10px;
+
+}
+
+
+
+
+
+.profile .logo1{
+	position: absolute;
+	right: 100px;
+	width: 80px;
+	transition: width 3s, transform 2s;
+}
+
+.profile .logo1:hover{
+	transform: translate(160px, 40px);
+
+	width: 60px;
+}
+
+
+.profile .logo3{
+	position: absolute;
+	left: 100px;
+	width: 80px;
+	transition: width 3s, transform 2s;
+}
+
+.profile .logo3:hover{
+	transform: rotate(360deg);
+	width: 60px;
+}
+
+.profile-dsc p{
+	color: #FFFAF0;
+	text-align: center;
+	width: 90%;
+	margin: 0px auto;
+	margin-bottom: 100px;
+}
+
+
+.pro-exp{
+	padding: 1% 5%;
+}
+
+.contact-links{
+	position: relative;
+}
+
+.media-buttons{
+	position: absolute;
+	margin-top: 200px;
+	left: 50%; 
+	top: 50%;
+	transform: translate(-50px, -50px);
+}
+
+
+
+
+.footer-menu{
+	margin-top: 12px;
+}
+
+.footer-menu a{
+	display: inline;
+	margin: 10px;
+	
+}
