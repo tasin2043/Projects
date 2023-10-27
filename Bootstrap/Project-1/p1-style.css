@@ -1,0 +1,239 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+
+    /*font-family: 'Alumni Sans Collegiate One', sans-serif;
+    font-family: 'Playpen Sans', cursive;*/
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+
+    font-family: 'Playpen Sans', cursive;
+}
+
+.section-title h3{
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.hr-style{
+    border: 5px dotted white;
+    border-bottom: none;
+    width: 50px;
+
+}
+
+
+/*header starts*/
+header{
+    background-image: url("images/web-background.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    padding: 1% 10%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.navbar-icon{
+    color: aliceblue;
+}
+
+.navbar-brand img{
+    width: 60px;
+    height: auto;
+    background-color: aliceblue;
+    border-radius: 35%;
+    opacity: 0.7;
+    padding: 10%;
+}
+
+.nav-link{
+    color: aliceblue;
+    margin: 10px;
+    border-radius:5px;
+    transition: .4s;
+}
+
+.nav-link:hover{
+    background-color: #0B0C0A;
+    outline-offset: aliceblue;
+    transform: scale(1.1);
+    color: aliceblue;
+}
+
+.banner-container{
+    height: 100vh;
+}
+
+.banner-container h1{
+    font-size: 4rem;
+    text-shadow: 4px 7px black;
+    background-color:rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/*header ends*/
+
+
+
+
+/*features starts*/
+
+#features{
+    padding: 5% 10%;
+    background-color: slategray;
+}
+
+.features-col{
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0;
+    transition: 0.4s;
+}
+
+.features-col:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 6px 5px aliceblue;
+}
+
+.icon-style{
+    background-color: slateblue;
+    color: white;
+    padding: 15px;
+    margin: 5px 0;
+}
+
+#features p{
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    color: aliceblue;
+}
+
+/*features ends*/
+
+
+
+
+/*about me starts*/
+#about-me{
+    padding: 4% 10%;
+    background-color: rgb(176, 248, 206);
+}
+
+#about-me p{
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    font-weight: light;
+}
+.achieve-desc span{
+    font-weight: 700 !important;
+}
+
+
+.star i{
+    width: 20px;
+    color: rgb(25, 2, 48);
+}
+/*about me ends*/
+
+
+
+
+/*Tutorial starts*/
+#tutorial{
+    padding: 4% 10%;
+    background-color: rgb(98, 144, 243);
+}
+
+.card{
+    transition: .4s;
+    border: 1px solid rgb(10, 2, 9);
+
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 6px 5px black;
+}
+/*Tutorial ends*/
+
+
+/*Feedback starts*/
+
+#feedback{
+    padding: 5%;
+    background-color: blue;
+}
+
+.carousel-item{
+    text-align: center;
+    padding: 7% 15%;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+.feedback-img{
+    width: 120px;
+    height: auto;
+    margin-bottom: 5px;
+}
+/*Feedback ends*/
+
+
+
+/*Contact me starts*/
+
+#contact-me{
+    background-color: darkcyan ;
+    padding: 2% 10%;
+}
+
+.form-group label{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+/*Contact me ends*/
+
+
+/*footer starts*/
+
+footer{
+    padding: 1% 10%;
+    background-color: #0B0C0A;
+    color: aliceblue;
+}
+
+
+footer a{
+    color: aliceblue;
+    margin: 0 10px;
+}
+
+footer a:hover{
+    color: seagreen;
+}
+/*footer ends*/
+
+
+
+
+
+@media (max-width:768px){
+    .nav-link{
+        background-color: rgb(0,0,0,0.7);
+    }
+
+    .banner-container h1{
+        font-size: 2.5rem;
+    }
+}
