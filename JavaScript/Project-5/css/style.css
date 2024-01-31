@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    background-color: slategray;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.card {
+    background-color: burlywood;
+    padding: 1rem;
+    color: black;
+    min-height: 80vh;
+    width: 50%;
+    overflow: scroll;
+    border-radius: 20px;
+}
+
+.card-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+input {
+    border: none;
+    border-radius: 0.6rem;
+    width: 80%;
+    padding: 0.5rem;
+}
+
+.btn {
+    border: none;
+    color: white;
+    background-color: blue;
+    border-radius: 0.6rem;
+    padding: 0.5rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: black;
+    color: #DEB887;
+}
+
+#addTodoButton {
+    width: 19%;
+}
+
+.li-style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 0.6rem;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.li-style:hover {
+    background-color: #b9925f;
+    color: black;
+    border-color: black;
+    border-width: 10px;
+}
+
+.li-added {
+    background-color: aquamarine;
+    color: black;
+    padding: 0.6rem;
+    margin: 10px;
+    border-left: 6px solid green;
+}
+
+.li-removed {
+    background-color: rgb(250, 142, 142);
+    color: black;
+    padding: 0.6rem;
+    margin: 10px;
+    border-left: 6px solid rgb(139, 1, 1);
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: lightgreen;
+    }
+}
