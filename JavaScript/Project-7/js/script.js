@@ -1,5 +1,5 @@
 /**
- * Project-6
+ * Project-7
  * Change the background color by clicking and generating hex random color
  * Also display a hex code to disable field
  */
