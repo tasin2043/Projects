@@ -1,11 +1,12 @@
 /**
- * Project-9
+ * Project-10
  * Change the background color by clicking and generating hex random color
  * Also display a hex code to disable field
  * Add a button to copy the color code
  * Activate Toast message
  * create a dynamic toast message
  * clear toast message
+ * user can type their own hex code too
  */
 
 let div = null;
@@ -31,7 +32,19 @@ function main() {
     if (div !== null) {
       div.remove();
     }
-    generateToastMessage(`${output.value} copied`);
+
+    if (isValidHex(output.value)) {
+      generateToastMessage(`${output.value} copied`);
+    } else {
+      alert("Invalid Color Code");
+    }
+  });
+
+  output.addEventListener("keyup", function (e) {
+    const color = e.target.value;
+    if (color && isValidHex(color)) {
+      container.style.backgroundColor = color;
+    }
   });
 }
 
@@ -60,4 +73,16 @@ function generateToastMessage(msg) {
   });
 
   document.body.appendChild(div);
+}
+
+/**
+ *
+ * @param {length} color
+ */
+function isValidHex(color) {
+  if (color.length !== 7) return false;
+  if (color[0] !== "#") return false;
+
+  color = color.substring(1);
+  return /^[0-9A-Fa-f]{6}$/i.test(color);
 }
