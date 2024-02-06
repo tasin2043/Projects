@@ -1,5 +1,5 @@
 /**
- * Project-10
+ * Project-11
  * Change the background color by clicking and generating hex random color
  * Also display a hex code to disable field
  * Add a button to copy the color code
