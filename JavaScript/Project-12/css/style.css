@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 10px;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .input-icon{
+    display: inline;
+    background-color: rgb(230, 229, 229);
+    margin: 2.1rem 0;
+    color: black;
+    font-weight: bolder;
+    font-size: 1rem;
+    position: absolute;
+    padding: 8.5px 12px;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border: 2px solid black;
+  }
+  
+  #output1 {
+    border-radius: 0.5rem;
+    border: 3px solid black;
+    text-align: center;
+    color: black;
+    margin: 1rem 0;
+    padding: 10px 5px;
+    font-weight: bold;
+    border: 2px solid black;
+  }
+
+  #output2 {
+    border-radius: 0.5rem;
+    border: 3px solid black;
+    text-align: center;
+    color: black;
+    margin: 1rem 0;
+    padding: 10px 5px;
+    font-weight: bold;
+    border: 2px solid black;
+  }
+  
+  .copyBtn1 {
+    color: black;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 10px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid black;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 12px;
+    outline: none;
+    font-weight: bold;
+  }
+
+  .copyBtn2 {
+    color: black;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 10px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid black;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 12px;
+    outline: none;
+    font-weight: bold;
+  }
+  
+  .copyBtn1:hover {
+    background-color: rgb(230, 229, 229);
+    color: black;
+    border: 2px solid black;
+    transition: 0.5s;
+  }
+
+  .copyBtn2:hover {
+    background-color: rgb(230, 229, 229);
+    color: black;
+    border: 2px solid black;
+    transition: 0.5s;
+  }
+  
+  .clickBtn {
+    color: blanchedalmond;
+    background-color: blue;
+    border-radius: 0.8rem;
+    padding: 10px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid blanchedalmond;
+    letter-spacing: 1px;
+    margin: 1rem 0;
+    cursor: pointer;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .clickBtn:hover {
+    background-color: blanchedalmond;
+    color: blue;
+    border: 2px solid blue;
+    transition: 1s;
+  }
+  
+  h1 {
+    text-align: center;
+    text-shadow: 1px 1px 0 rgb(0, 0, 0) 1px -1px 0 rgb(0, 0, 0) -1px 1px 0
+      rgb(0, 0, 0) 1px 1px 0 rgb(0, 0, 0);
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+
+  h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding: -10px -10px;
+  }
+  
+  .toast-message {
+    position: fixed;
+    z-index: 999;
+    top: 1rem;
+    right: 1rem;
+    background-color: beige;
+    color: black;
+    margin: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 0px 0px black;
+  }
+  
+  .toast-message-slide-in {
+    animation: toast-animation-in 0.5s ease-in;
+  }
+  .toast-message-slide-out {
+    animation: toast-animation-out 0.5s ease-in;
+  }
+  
+  @keyframes toast-animation-in {
+    from {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes toast-animation-out {
+    from {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+  }
+  
