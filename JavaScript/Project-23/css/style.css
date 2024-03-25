@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(223, 217, 217);
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1px;
+}
+
+.product img {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  margin: auto 1px;
+  border: 1px solid black;
+}
+
+.product h2 {
+  font-size: 1.2rem;
+}
+
+.product {
+  border: 1px solid red;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px 20px;
+  width: 200px;
+  height: 400px;
+}
